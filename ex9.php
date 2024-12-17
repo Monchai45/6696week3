@@ -18,24 +18,16 @@
     <title>ตัวอย่าง 1</title> 
 </head>
 <body>
-    <h1> โปรแกรม ภาษา HTML </h1>
+    <h1> โปรแกรม ภาษา PHP สร้างฟอร์มรับข้อมูล Method POST</h1>
     664485022 นายมนชัย รัตนบุตร <br>
     หมู่เรียน 66/96
-    <?php
-        // ทดสอบ comment ภาษา php  
-       echo "<h2> สวัสดีปีใหม่</h2>";
-       echo "<br>ขอให้ทุกคนประสบแต่ความสุข";
-       // สร้างตัวแปร
-       $name="มนชัย";
-       $surname="รัตนบุตร";
-       echo "<br>ชื่อของคุณคือ" .$name."  ".$surname;
-       $x=15;
-       $y=7;
-       $z=$x+$y;
-       echo "<br> ค่าผลบวกเท่ากับ" .$z;
-       $z=$x*$y;
-       echo "<br> ค่าผลคูณเท่ากับ" .$z;
+    <h2>โปรแกรมพื้นที่สี่เหลี่ยมผืนผ้า</h2>
 
-    ?>
+    <form action="ex10.php" method="POST">
+        กว้าง <input type="text" name="w"> เมตร
+        ยาว <input type="text" name="h"> เมตร
+        สูง <input type="text" name="hg"> เซนติเมตร
+        <input type="submit" value="กดส่งข้อมูล">
+    </form>
 </body>
 </html>
